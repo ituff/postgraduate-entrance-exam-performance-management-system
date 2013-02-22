@@ -21,7 +21,14 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        checkVerificationCode();
+        if (DropDownList1.SelectedIndex.Equals(0))
+        {
+            checkVerificationCode();
+        }
+        else {
+            MessageBox.Show(this, "暂未开放下列查询！");
+            return;
+        }
     }
     protected void checkVerificationCode()
     {

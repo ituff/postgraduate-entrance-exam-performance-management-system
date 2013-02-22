@@ -38,8 +38,14 @@
     </table>
     <div style="width: 1004px; height: 260px; margin: 0 auto; background-image: url(image/top3.jpg);"></div>
     <form id="form1" runat="server">
-        <div style="width: 1004px; min-height: 250px; margin: 0 auto; margin-top: 25px;">
+        <div style="width: 1004px; min-height: 265px; margin: 0 auto; margin-top: 10px;">
             <asp:Panel ID="Panel1" runat="server" Visible="true">
+                 <p style="text-align: center;">查询类型:
+                     <asp:DropDownList ID="DropDownList1" runat="server" Width="200px">
+                         <asp:ListItem Selected="True">2013年硕士研究生入学考试成绩</asp:ListItem>
+                         <asp:ListItem>2013年博士研究生入学考试成绩</asp:ListItem>
+                         <asp:ListItem>2013年工程硕士入学考试成绩</asp:ListItem>
+                     </asp:DropDownList><span style="color: red;">（必选）</span></p>
                 <p style="text-align: center;">考生编号:<asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox><span style="color: red;">（必填）</span></p>
                 <p style="text-align: center;">考生姓名:<asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox><span style="color: red;">（必填）</span></p>
                 <p style="text-align: center;">身份证号:<asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox><span style="color: red;">（必填）</span></p>
